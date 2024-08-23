@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.year {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.college-name {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.auto {
+    font-size: 1em;
+    color: #777;
+}
