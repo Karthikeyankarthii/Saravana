@@ -1,75 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>college id</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f3ebeb;
+            font-family: Arial, Helvetica, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+            background-color: #c05296;
         }
 
         .container {
-
             text-align: center;
-            padding: 20px;
-            border: 2px solid #333;
-            border-radius: 10px;
-            background-color: rgb(99, 99, 204);
+            padding: 10px;
+            height: 375px;
+            width: 300px;
+            /* Adjust width as needed*/
+            border: 4px solid black;
+            border-radius: 25px;
+            background-color: #f0f0f0;
+        }
+
+        .half-circle-container {
+            width: 300px;
+            height: 150px;
+            background-color: rgb(102, 143, 204);
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px;
         }
 
         .year {
-            font-size: 1.2em;
+            font-size: 1em;
             color: #666;
         }
 
         .college-name {
-            font-size: 2em;
+            font-size: 1.5em;
             font-weight: bold;
-            color: #302e2e;
+            color: rgb(23, 119, 10);
+
         }
 
-        .auto {
+        .autonomous {
             font-size: 1em;
             color: #777;
+
         }
 
-        .madurai,
-        .accreditation,
+        .affiliation,
+        .accreditation {
+            font-size: 0.7em;
+            color: #555;
+        }
+
         .website {
             font-size: 0.9em;
-            color: #6b6565;
-
+            color: blue;
         }
 
-
-        .container-2 {
+        .image {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 10vh;
 
 
         }
 
-        Img {
-            max-width: 7.5%;
-            height: auto;
+        img {
+            width: 100px;
+            height: 100px;
+            transform: translateY(50%);
         }
-
 
         .student-info {
-            margin-top: 20px;
+            margin-top: 145px;
             font-size: 1em;
-            color: #f1ecec;
-
+            color: #444;
         }
 
         .student-info span {
@@ -81,18 +93,18 @@
 
 <body>
     <div class="container">
-        <div class="year">Since 1964</div>
-        <div class="college-name">G.T.N. ARTS COLLEGE</div>
-        <div class="auto">(Autonomous)</div>
-        <div class="madurai">Affiliated to Madurai Kamaraj University</div>
-        <div class="accreditation">Accredited by NAAC with 'B' Grade</div>
-        <div class="website">www.gtnartscollege.ac.in</div>
-        <div class="container-2">
-
-            <img class="Image" src="public/IMG_20230218_201955_950.jpg" alt="Student Img" />
-
+        <div class="half-circle-container">
+            <div class="year">Since 1964</div>
+            <div class="college-name">G.T.N. ARTS COLLEGE</div>
+            <div class="autonomous">(Autonomous)</div>
+            <div class="affiliation">Affiliated to Madurai Kamaraj University,Madurai</div>
+            <div class="accreditation">Accrediated by NAAC with 'B' Grade</div>
+            <div class="website">www.gtnartscollege.ac.in</div>
+            <div class="image"><img src="./public/IMG_20230218_201955_950.jpg" alt="student img"></div>
         </div>
-        <div class="student-info"> <span>Saravanakumar</span> <span>22UITC039</span> <span>B.Sc(IT)-C</span></div>
+        <div class="student-info">
+            <span>Saravanakumar<span>22UITC039</span> <span>B.Sc(IT)-C</span>
+        </div>
     </div>
 </body>
 
